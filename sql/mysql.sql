@@ -51,6 +51,7 @@ CREATE TABLE `device` (
                           `mediaServerId` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT 'auto',
                           `custom_name` varchar(255) COLLATE utf8mb4_general_ci DEFAULT NULL,
                           `password` varchar(255) COLLATE utf8mb4_general_ci DEFAULT NULL,
+                          `sdpIp` varchar(255) COLLATE utf8mb4_general_ci DEFAULT NULL,
                           PRIMARY KEY (`id`),
                           UNIQUE KEY `device_deviceId_uindex` (`deviceId`)
 ) ENGINE=InnoDB AUTO_INCREMENT=47 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
